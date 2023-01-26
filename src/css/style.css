@@ -1,0 +1,339 @@
+body {
+  font-size: 1.4rem;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+header .container {
+  background-color: var(--ligth);
+  position: fixed;
+  top:0; left: 0; right: 0;
+  height: 7.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 3px 4px 20px var(--shadow);
+  z-index: 1000;
+}
+
+header .container .logo {
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+header .container .logo a span {
+  color: var(--pink);
+}
+
+header .container nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+header .container nav ul a {
+  font-size: 1.8rem;
+  color: var(--color-fontsize-icon);
+}
+
+header .container nav ul li a:hover {
+  color: var(--pink);
+}
+
+header .container .icons a {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+header .container .icons a:hover {
+  color: var(--pink);
+}
+
+.hero{
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: right 35% bottom 45%;
+  height: 80rem;
+}
+
+.hero .container{
+  width: 47rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hero .container h1{
+  font-size: 4.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero .container h3{
+  color: var(--pink);
+  font-size: 2.2rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+
+.hero .container p{
+  color: var(--color-p);
+  font-size: 1.3rem;
+  font-weight: bolder;
+  padding-bottom: 1.5rem;
+  line-height: 2rem;
+}
+
+.hero .container .btn,
+.about .container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--ligth);
+  background-color: var(--color-fontsize);
+  border-radius: 20px;
+  width: 13rem;
+  height: 3.5rem;
+
+}
+
+.hero .container .btn:hover,
+.about .container .btn:hover{
+  background-color: var(--pink);
+}
+
+.about .container{
+  margin-bottom: 4rem;
+}
+
+.about .container h2,
+.products .container h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: var(--pink);
+  background-color: var(--background);
+  padding: 1rem;
+  margin: 3rem 0 4rem 0;
+}
+
+.about .container h2 span,
+.products .container h2 span{
+  color: #000;
+}
+
+.about .container .video{
+  display: flex;
+  gap: 2rem;
+}
+
+.about .container .video-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 3px 10px var(--shadow);
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 50%;
+  
+  
+}
+
+.about .container .video-1 video{
+  position: relative;
+  margin: 2rem;
+  max-width: 93%;
+  height: 100%;
+  
+  
+}
+
+.about .container .video-1 p{
+  background-color: var(--ligth);
+  font-size: 3rem;
+  font-weight: bolder;
+  mix-blend-mode: screen;
+  width: 39.6%;
+  height: 7%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.about .container .info-about{
+  width: 50%;
+}
+
+.about .container .info-about h3{
+  font-size: 3rem;
+  color: var(--color-fontsize);
+  padding: 1rem 0 1rem;
+
+}
+
+.about .container .info-about p{
+  color: var(--color-p);
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.service{
+  background-color: var(--background-icon);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.service .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+
+.service .container .card-service{
+  display: flex;
+  flex: 1 1 30px;
+  background-color: var(--ligth);
+  max-width: 25rem;
+  height: 8.5rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.service .container .card-service img{
+  width: 4rem;
+}
+
+.service .container .card-service .orders h4{
+  width: 15rem;
+  font-size: 1.4rem;
+  padding-bottom: 0.4rem;
+  color: var(--color-fontsize);
+}
+
+.service .container .card-service .orders p{
+  width: 15rem;
+  font-size: 1.3rem;
+  color: var(--color-p);
+}
+
+
+
+.products .container .flower{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+
+.products .container .flower .cardflower{
+  display: flex;
+  flex-direction: column;
+  width: 36rem;
+  height: 38rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 3px 4px 20px var(--shadow);
+
+
+}
+
+.products .container .flower .cardflower .desconto p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--pink);
+  width: 7rem;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--background);
+
+}
+
+.products .container .flower .cardflower .img-flower{
+  position: relative;
+  text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+
+.products .container .flower .cardflower .img-flower img{
+  height: 23rem;
+}
+
+.products .container .cardflower:hover .img-flower img{
+  transform: scale(1.1);
+}
+
+.products .container .cardflower .img-flower .icons{
+  position: absolute;
+  bottom:-7rem; left:0; right:0;
+  display: flex;
+}
+
+.products .container .cardflower:hover .img-flower .icons{
+  bottom:0;
+}
+
+.products .container .cardflower .img-flower .icons a{
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width:50%;
+  background:var(--pink);
+  color:#fff;
+}
+
+.products .container .cardflower .img-flower .icons .cart-btn{
+  border-left: .1rem solid #fff7;
+  border-right: .1rem solid #fff7;
+  width:100%;
+}
+
+.products .container .cardflower .img-flower .icons a:hover{
+  background:#333;
+}
+
+.products .container .flower .cardflower .price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .container .flower .cardflower .price h3{
+  font-size: 2.5rem;
+}
+
+.products .container .flower .cardflower .price .value{
+  font-size: 2.5rem;
+  color: var(--pink);
+  font-weight: bolder;
+  
+}
+
+.products .container .flower .cardflower .price .value span{
+  color: var(--color-p);
+  font-weight: lighter;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+
+}
